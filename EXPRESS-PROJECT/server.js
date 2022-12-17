@@ -4,12 +4,22 @@ const app = express();
 
 const PORT = 3000;
 
+
+
 const friends = [
     {
         id: 0,
         name: 'Isaac Netwon'
     },
 ];
+
+app.use((req, res, next)=> {
+    const start = Date.now();
+    next();
+    //flow of execution returns
+    const delta = Date.now() - start;
+    console.log(`${req.method} ${req.url} ${delta}ms`);
+})
 
 app.get('/friends', (req, res) => {
     res.json(friends)
