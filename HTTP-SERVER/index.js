@@ -21,7 +21,7 @@ const friends = [
 
 server.on('request', (req, res) => {
     const items = req.url.split('/');
-    if (items[1] === 'friends') {
+    else if (items[1] === 'friends') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json')
         if (items.length === 3){
