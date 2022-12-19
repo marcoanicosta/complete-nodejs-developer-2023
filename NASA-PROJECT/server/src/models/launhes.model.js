@@ -1,6 +1,6 @@
 const launches = new Map();
 
-const laucnh = {
+const launch = {
     flightNumber: 100,
     mission: 'Kepler Exploration X',
     rocket: 'Explorere IS1',
@@ -11,7 +11,7 @@ const laucnh = {
     success: true,
 }
 
-launches.set(laucnh.flightNumber, launch);
+launches.set(launch.flightNumber, launch);
 
 
 module.exports = {
