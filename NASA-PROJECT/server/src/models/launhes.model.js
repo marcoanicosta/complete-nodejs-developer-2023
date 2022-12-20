@@ -17,7 +17,7 @@ launches.set(launch.flightNumber, launch);
 
 
 function getAllLaunches(){
-    return Array.from(launcehs.values());
+    return Array.from(launches.values());
 }
 
 function addNewLaunch(launch) {
