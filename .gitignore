@@ -1,8 +1,9 @@
 EXPRESS-PROJECT/node_modules
-PLANETS-PROJECT/node_modules
-PERFORMANCE-PROJECT/node_modules
 NASA-PROJECT/node_modules
 NASA-PROJECT/client/node_modules
 NASA-PROJECT/server/node_modules
+PERFORMANCE-EXAMPLE/node_modules
+PLANETS-PROJECT/node_modules
+
 PACKAGE-EXAMPLE
-first
+firstp
