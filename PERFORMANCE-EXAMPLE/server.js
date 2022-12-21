@@ -27,8 +27,9 @@ console.log("Running server.js...📟🚸");
 if (cluster.isMaster) {
     console.log("Master has been started... 📟");
     const NUM_WORKERS = os.cpus().length;
-    for (let i = 0; < NUM_WORKERS; i++) {
+    for (let i = 0; i < NUM_WORKERS; i++) {
         cluster.fork();
+        console.log(i);
     }
 } else {
     console.log("Worker process started. 🖲️");
