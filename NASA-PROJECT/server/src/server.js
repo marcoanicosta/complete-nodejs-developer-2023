@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 8000;
 
 const server = http.createServer(app);
 
+const MONGO_URL = 'mongodb+srv://nasa-api:64nzHJO0OXt2psPV@cluster0.gcdrucm.mongodb.net/nasa?retryWrites=true&w=majority'
 
 mongoose.connection.once('open', () => {
     console.log('MongoDB connection ready!');
