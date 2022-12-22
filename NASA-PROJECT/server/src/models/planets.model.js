@@ -21,10 +21,10 @@ function loadPlanetsData() {
             }))
             .on('data', async (data) =>{
                 if(isHabitablePlanet(data)) {
-                // insert + update = upsert
-                 await planets.create({
-                    keplerName: data.keplerName,
-                 });
+                //TODO insert + update = upsert
+                //  await planets.create({
+                //     keplerName: data.keplerName,
+                //  });
                 }
             })
             .on('error', (err) => {
