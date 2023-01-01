@@ -17,6 +17,6 @@ firstp
 
 #misc
 .env
-SECURITT_PROJECT/.env
-SECURITT_PROJECT/key.pem
-SECURITT_PROJECT/cert.pem
+SECURITY_PROJECT/.env
+SECURITY_PROJECT/key.pem
+SECURITY_PROJECT/cert.pem
