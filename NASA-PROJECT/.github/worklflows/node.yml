@@ -1,4 +1,4 @@
-name: NASA PROJECT CI
+name: NASA PROJECT CI update
 on:
   push:
     branch: [main]
