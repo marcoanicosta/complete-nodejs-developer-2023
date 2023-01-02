@@ -1,9 +1,9 @@
-name: NASA PROJECT CI update
+name: NASA PROJECT CI
 on:
   push:
-    branch: [main]
+    branch: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
