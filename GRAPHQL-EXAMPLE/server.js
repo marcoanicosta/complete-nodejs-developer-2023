@@ -5,24 +5,9 @@ const { loadFilesSync } = require('@graphql-tools/load-files');
 const { graphqlHTTP } = require('express-graphql');
 
 const { makeExecutableSchema } = require('@graphql-tools/schema');
-
-const typesArray = loadFilesSync(path.join(__dirname, '**/*.graphql'));
-// const typesArray = loadFilesSync('**/*', {
-//     extensions: ['graphql'],
-//     resolvers: {
-//         Query: {
-//             products: (parent, args, context, info) => {
-//                 console.log("Getting the products...");
-//                 return parent.products;
-//             },
-//             orders: (parent) => {
-//                 console.log("Getting the orders...");
-//                 return parent.orders;
-//             },
-//         }
-//     }
-//   });
-//const { makeExecutableSchema } = loadFilesSync( '@graphql-tools/schema'));
+const typesArray = loadFilesSync('**/*', {
+    extensions: ['graphql'],
+  });
 
 
 const schema = makeExecutableSchema ({
