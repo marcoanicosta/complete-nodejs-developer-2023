@@ -14,9 +14,10 @@ const schema = makeExecutableSchema ({
     typeDefs: typesArray,
     resolvers: {
         Query: {
-            products: (parent, args, context, info) => {
+            products: async (parent, args, context, info) => {
                 console.log("Getting the products...");
-                return parent.products;
+                const product = await Promise.resolve(parent.products);
+                return product;
             },
             orders: (parent) => {
                 console.log("Getting the orders...");
