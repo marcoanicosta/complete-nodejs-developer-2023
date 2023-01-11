@@ -1,5 +1,4 @@
 module.exports = [
-    [
         {
             date: '2005-05-05',
             subtotal: 90.22,
@@ -14,5 +13,4 @@ module.exports = [
                 }  
             ]
         }
-    ]
 ]
