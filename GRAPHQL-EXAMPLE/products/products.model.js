@@ -16,7 +16,7 @@ function getAllProducts() {
 }
 
 function getProductsByPrice(min, max) {
-    return products.filter((prodcuct) => {
+    return products.filter((product) => {
         return product.price >= min && product.price <= max;
     })
 }
