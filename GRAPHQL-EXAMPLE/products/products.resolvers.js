@@ -7,9 +7,20 @@ module.exports = {
         },
         productsByPrice: (_, args) => {
             return productModel.getProductsByPrice(args.min, args.max);
+        },
+        product: (_, args) => {
+            return productModel.getProductByID(args.id);
         }
+    },
+    Mutation: {
+        addNewProduct: (_, args) => {
+            return productModel.addNewProduct(args.id, args.description, args.price);
+        },
+        addNewProductReview: (_, args) => {
+            return productModel.addNewProductReview(args.id, args.rating, args.comment);
+        },
     }
-}
+};
 
 
 // products: async (parent, args, context, info) => {
