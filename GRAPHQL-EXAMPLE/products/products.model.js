@@ -12,16 +12,23 @@ const products = [
 ]
 
 function getAllProducts() {
-    return products
-}
+    return products;
+};
 
 function getProductsByPrice(min, max) {
     return products.filter((product) => {
         return product.price >= min && product.price <= max;
-    })
-}
+    });
+};
+
+function getProductByID(id) {
+    return products.find((product)=> {
+        return product.id === id;
+    });
+};
 
 module.exports = {
     getAllProducts,
     getProductsByPrice,
-}
+    getProductByID,
+};
