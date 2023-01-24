@@ -7,7 +7,8 @@ if (food === 'love' && parent === 'ryan') {
         console.log('🥚.. this egg needs some love');
     }
 
-
+console.table(Deno.metrics());
+    
 
     // const food = 'love'
 
